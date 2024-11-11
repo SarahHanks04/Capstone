@@ -11,7 +11,6 @@ import {
 } from "./ComplaintFormConfig";
 import CustomModal from "../Component/CustomModal";
 
-
 Modal.setAppElement("#root");
 
 const ComplaintForm = () => {
@@ -22,9 +21,7 @@ const ComplaintForm = () => {
     <div className="flex items-center justify-center min-h-screen bg-gray-100 overflow-hidden relative pt-[2rem] pb-[2rem]">
       <div className="relative w-11/12 max-w-md z-10">
         {/* Rotating Background Div */}
-        <div
-          className="absolute inset-0 transform rotate-[-4deg] bg-[#FDBF17] rounded-xl z-10 h-[100%] w-[100%]"
-        ></div>
+        <div className="absolute inset-0 transform rotate-[-4deg] bg-[#FDBF17] rounded-xl z-10 h-[100%] w-[100%]"></div>
 
         {/* Form Container */}
         <div className="relative bg-white rotate-[2deg] p-8 rounded-xl shadow-lg z-20">
@@ -52,7 +49,6 @@ const ComplaintForm = () => {
             }
           >
             {({ touched, errors, isSubmitting }) => (
-              
               <Form className="space-y-4">
                 <div>
                   <label htmlFor="email">Email Address</label>
