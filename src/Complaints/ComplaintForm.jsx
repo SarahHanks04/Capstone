@@ -10,7 +10,7 @@ import {
   validationSchema,
 } from "./ComplaintFormConfig";
 import CustomModal from "../Component/CustomModal";
-import { colgroup } from "framer-motion/client";
+
 
 Modal.setAppElement("#root");
 
