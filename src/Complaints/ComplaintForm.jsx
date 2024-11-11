@@ -135,7 +135,7 @@ const ComplaintForm = () => {
         </div>
       </div>
 
-      {/* Success Modal */}*
+      {/* Success Modal */}
       <CustomModal
         isOpen={modalIsOpen}
         onRequestClose={() => setModalIsOpen(false)}

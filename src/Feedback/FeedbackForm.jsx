@@ -27,7 +27,7 @@ const FeedbackForm = () => {
 
           <Formik
             initialValues={initialValues}
-            validationSchema={validationSchema}
+            // validationSchema={validationSchema}
             onSubmit={(values, actions) =>
               handleSubmit(values, actions, saveFormData, setModalIsOpen)
             }
@@ -125,7 +125,7 @@ const FeedbackForm = () => {
                       >
                         <Field
                           type="checkbox"
-                          name={`reason${index}`}
+                          name="reason"
                           value={option}
                           className="form-checkbox"
                         />
