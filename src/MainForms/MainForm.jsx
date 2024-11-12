@@ -8,7 +8,7 @@ const MainForm = () => {
   const [activeForm, setActiveForm] = useState("feedback");
 
   return (
-    <main className="flex items-center justify-center min-h-screen bg-gray-100 overflow-hidden relative pt-8 pb-8 sm:pt-10 sm:pb-10 lg:pt-16 lg:pb-16">
+    <main className="flex items-center justify-center min-h-screen bg-gray-100 overflow-hidden relative sm:pt-10 sm:pb-10 lg:pt-16 lg:pb-16">
       <section className="relative w-11/12 max-w-sm sm:max-w-md lg:max-w-lg z-10">
         {/* Rotating Background Div */}
         <div className="absolute inset-0 transform rotate-[-4deg] bg-[#FDBF17] rounded-xl z-10 h-full w-full"></div>
@@ -21,7 +21,7 @@ const MainForm = () => {
             className="w-20 sm:w-24 lg:w-28 mb-4 sm:mb-6"
           />
           <div>
-            <h2 className="text-lg sm:text-xl lg:text-2xl font-semibold text-gray-800 pt-2 sm:pt-4">
+            <h2 className="text-lg sm:text-xl lg:text-3xl font-semibold text-gray-800 pt-2 sm:pt-4">
               Feedback & Complaints
             </h2>
             <NavigationButton
