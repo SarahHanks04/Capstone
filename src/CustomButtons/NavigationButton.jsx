@@ -4,7 +4,7 @@ const NavigationButton = ({ activeForm, setActiveForm }) => {
   return (
     <div className="flex gap-14 space-x-4 mt-[1.8rem]">
       <button
-        className={`px-4 py-2 font-medium rounded-lg focus:outline-none ${
+        className={`px-5 py-3 font-medium text-xl rounded-lg focus:outline-none ${
           activeForm === "feedback"
             ? "text-white bg-[#FDBF17]"
             : "text-[#FDBF17] bg-white border-[1.4px] border-[#13162D]"
@@ -14,7 +14,7 @@ const NavigationButton = ({ activeForm, setActiveForm }) => {
         Feedback
       </button>
       <button
-        className={`px-4 py-2 font-medium rounded-lg focus:outline-none ${
+        className={`px-5 py-3 font-medium text-xl rounded-lg focus:outline-none ${
           activeForm === "complaint"
             ? "text-white bg-[#FDBF17]"
             : "text-[#FDBF17] bg-white border-[1.4px] border-[#13162D]"
