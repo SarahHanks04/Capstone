@@ -1,13 +1,11 @@
 import React from "react";
 import "./App.css";
-import ComplaintForm from "./Complaints/ComplaintForm";
-import FeedbackForm from "./Feedback/FeedbackForm";
+import MainForm from "./MainForms/mainForm";
 
 function App() {
   return (
     <div>
-      {/* <ComplaintForm /> */}
-      <FeedbackForm />
+      <MainForm />
     </div>
   );
 }

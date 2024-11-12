@@ -2,13 +2,13 @@ import * as Yup from "yup";
 
 export const initialValues = {
   satisfaction: "",
-  rating: "",
+  emojis: "",
   reasons: [],
 };
 
 export const validationSchema = Yup.object({
-  satisfaction: Yup.string().required("Required"),
-  rating: Yup.string().required("Required"),
+  satisfaction: Yup.string().required("This field is required"),
+  emojis: Yup.string().required("This field is required"),
   reasons: Yup.array().min(1, "At least one reason is required"),
 });
 

@@ -1,6 +1,5 @@
 import React, { useContext } from "react";
 import Modal from "react-modal";
-import DeskAtTheBulb from "../assets/DeskAtTheBulb.png";
 import { Formik, Form, Field, ErrorMessage } from "formik";
 import { CapstoneContext } from "../Context/CapstoneContext";
 import TextError from "../Component/TextError";
@@ -18,29 +17,10 @@ const ComplaintForm = () => {
     useContext(CapstoneContext);
 
   return (
-    <div className="flex items-center justify-center min-h-screen bg-gray-100 overflow-hidden relative pt-[2rem] pb-[2rem]">
-      <div className="relative w-11/12 max-w-md z-10">
-        {/* Rotating Background Div */}
-        <div className="absolute inset-0 transform rotate-[-4deg] bg-[#FDBF17] rounded-xl z-10 h-[100%] w-[100%]"></div>
-
-        {/* Form Container */}
-        <div className="relative bg-white rotate-[2deg] p-8 rounded-xl shadow-lg z-20">
-          <img src={DeskAtTheBulb} alt="Logo" className="w-[120px] mb-6" />
-          <div className="mb-6">
-            <h2 className="text-xl font-semibold text-gray-800">
-              Feedback & Complaints
-            </h2>
-            <div className="flex gap-8 space-x-4 mt-4 mb-6">
-              <button className="px-4 py-2 font-medium text-white bg-[#FDBF17] rounded-lg focus:outline-none">
-                Feedback
-              </button>
-              <button className="px-4 py-2 font-medium text-[#FDBF17] bg-white border border-[#13162D] rounded-lg focus:outline-none">
-                Complaints
-              </button>
-            </div>
-          </div>
-
-          <hr className="mb-10" />
+    <main className="flex items-center justify-center min-h-screen overflow-hidden relative">
+      <section className="relative w-11/12 max-w-md z-10">
+        <div>
+          <hr className="mb-6" />
           <Formik
             initialValues={initialValues}
             validationSchema={validationSchema}
@@ -129,7 +109,7 @@ const ComplaintForm = () => {
             )}
           </Formik>
         </div>
-      </div>
+      </section>
 
       {/* Success Modal */}
       <CustomModal
@@ -139,7 +119,7 @@ const ComplaintForm = () => {
       >
         <p>Your complaint has been submitted successfully!</p>
       </CustomModal>
-    </div>
+    </main>
   );
 };
 

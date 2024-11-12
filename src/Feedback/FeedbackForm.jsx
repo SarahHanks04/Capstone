@@ -14,20 +14,12 @@ const FeedbackForm = () => {
     useContext(CapstoneContext);
 
   return (
-    <div className="flex items-center justify-center min-h-screen bg-gray-100 overflow-hidden relative pt-[2rem] pb-[2rem]">
+    <main className="flex items-center justify-center min-h-screen overflow-hidden relative">
       <div className="relative w-11/12 max-w-md z-10">
-        {/* Rotating Background Div */}
-        <div className="absolute inset-0 transform rotate-[-4deg] bg-[#FDBF17] rounded-xl z-10 h-[100%] w-[100%]" />
-
-        {/* Form Container */}
-        <div className="relative bg-white rotate-[2deg] p-8 rounded-xl shadow-lg z-20">
-          <h2 className="text-xl font-semibold text-gray-800 mb-6">
-            The Bulb Africa Feedback
-          </h2>
-
+        <div>
           <Formik
             initialValues={initialValues}
-            // validationSchema={validationSchema}
+            validationSchema={validationSchema}
             onSubmit={(values, actions) =>
               handleSubmit(values, actions, saveFormData, setModalIsOpen)
             }
@@ -35,8 +27,10 @@ const FeedbackForm = () => {
             {({ values, touched, errors, isSubmitting }) => (
               <Form className="space-y-6">
                 {/* Question 1 */}
-                <div>
-                  <label className="font-semibold">Question 1</label>
+                <section>
+                  <label htmlFor="question1" className="font-semibold">
+                    Question 1
+                  </label>
                   <p className="text-gray-600">
                     How satisfied are you after using our services?
                   </p>
@@ -73,11 +67,13 @@ const FeedbackForm = () => {
                     ))}
                   </div>
                   <ErrorMessage name="satisfaction" component={TextError} />
-                </div>
+                </section>
 
                 {/* Question 2 */}
-                <div>
-                  <label className="font-semibold">Question 2</label>
+                <section>
+                  <label htmlFor="question2" className="font-semibold">
+                    Question 2
+                  </label>
                   <p className="text-gray-600">
                     How would you rate our service?
                   </p>
@@ -86,15 +82,15 @@ const FeedbackForm = () => {
                       <label key={index} className="flex flex-col items-center">
                         <Field
                           type="radio"
-                          name="rating"
+                          name="emojis"
                           value={`${index + 1}`}
                           className="hidden"
                         />
                         <span
                           className={`text-[32px] flex items-center justify-center rounded-full cursor-pointer transition-colors duration-300 ${
-                            touched.rating && errors.rating ? "" : ""
+                            touched.emojis && errors.emojis ? "" : ""
                           } ${
-                            values.rating === `${index + 1}`
+                            values.emojis === `${index + 1}`
                               ? "transform scale-150"
                               : ""
                           }`}
@@ -104,12 +100,14 @@ const FeedbackForm = () => {
                       </label>
                     ))}
                   </div>
-                  <ErrorMessage name="rating" component={TextError} />
-                </div>
+                  <ErrorMessage name="emojis" component={TextError} />
+                </section>
 
                 {/* Question 3 */}
-                <div>
-                  <label className="font-semibold">Question 3</label>
+                <section>
+                  <label htmlFor="question3" className="font-semibold">
+                    Question 3
+                  </label>
                   <p className="text-gray-600">
                     What are your reasons for not wanting to use our services?
                   </p>
@@ -119,22 +117,19 @@ const FeedbackForm = () => {
                       "Wasn't useful to me",
                       "Too expensive",
                     ].map((option, index) => (
-                      <label
-                        key={index}
-                        className="flex items-center space-x-2"
-                      >
+                      <div key={index} className="flex items-center space-x-2">
                         <Field
                           type="checkbox"
-                          name="reason"
+                          name="reasons"
                           value={option}
                           className="form-checkbox"
                         />
                         <span>{option}</span>
-                      </label>
+                      </div>
                     ))}
                   </div>
-                  <ErrorMessage name="reason" component={TextError} />
-                </div>
+                  <ErrorMessage name="reasons" component={TextError} />
+                </section>
 
                 <button
                   type="submit"
@@ -157,7 +152,7 @@ const FeedbackForm = () => {
       >
         <p>Your feedback has been submitted successfully!</p>
       </CustomModal>
-    </div>
+    </main>
   );
 };
 
