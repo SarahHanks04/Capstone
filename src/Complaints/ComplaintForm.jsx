@@ -31,12 +31,14 @@ const ComplaintForm = () => {
             {({ touched, errors, isSubmitting }) => (
               <Form className="space-y-4">
                 <div>
-                  <label htmlFor="email">Email Address</label>
+                  <label htmlFor="email" className="text-[18px] font-medium">
+                    Email Address
+                  </label>
                   <Field
                     type="email"
                     name="email"
                     placeholder="your@email.com"
-                    className={`w-full p-3 border rounded-md ${
+                    className={`w-full p-3 mt-2 border rounded-md focus:ring-0 focus:outline-none focus:border-[#FDBF17] ${
                       touched.email && errors.email
                         ? "border-red-500"
                         : "border-gray-300"
@@ -46,11 +48,11 @@ const ComplaintForm = () => {
                 </div>
 
                 <div>
-                  <label htmlFor="category">Complain Category</label>
+                  <label htmlFor="category" className="text-[18px] font-medium">Complain Category</label>
                   <Field
                     as="select"
                     name="category"
-                    className={`w-full p-3 border rounded-md ${
+                    className={`w-full p-3 border mt-2 rounded-md ${
                       touched.category && errors.category
                         ? "border-red-500"
                         : "border-gray-300"
@@ -65,11 +67,11 @@ const ComplaintForm = () => {
                 </div>
 
                 <div>
-                  <label htmlFor="service">Service Used</label>
+                  <label htmlFor="service" className="text-[18px] font-medium">Service Used</label>
                   <Field
                     as="select"
                     name="service"
-                    className={`w-full p-3 border rounded-md ${
+                    className={`w-full p-3 border mt-2 rounded-md ${
                       touched.service && errors.service
                         ? "border-red-500"
                         : "border-gray-300"
@@ -77,19 +79,19 @@ const ComplaintForm = () => {
                   >
                     <option value="">Select a service</option>
                     <option value="internet">Internet</option>
-                    <option value="mobile">Mobile</option>
-                    <option value="tv">TV</option>
+                    <option value="workspace">Workspace Rental</option>
+                    <option value="meeting-room">Meeting Room Access</option>
                   </Field>
                   <ErrorMessage name="service" component={TextError} />
                 </div>
 
                 <div>
-                  <label htmlFor="complaint">Your Complaint</label>
+                  <label htmlFor="complaint" className="text-[18px] font-medium">Your Complaint</label>
                   <Field
                     as="textarea"
                     name="complaint"
                     placeholder="Please describe your complaint here..."
-                    className={`w-full p-3 border rounded-md ${
+                    className={`w-full p-3 border mt-2 rounded-md focus:ring-0 focus:outline-none focus:border-[#FDBF17] ${
                       touched.complaint && errors.complaint
                         ? "border-red-500"
                         : "border-gray-300"

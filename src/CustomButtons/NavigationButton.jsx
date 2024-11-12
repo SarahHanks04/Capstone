@@ -7,7 +7,7 @@ const NavigationButton = ({ activeForm, setActiveForm }) => {
         className={`px-4 py-2 font-medium rounded-lg focus:outline-none ${
           activeForm === "feedback"
             ? "text-white bg-[#FDBF17]"
-            : "text-[#FDBF17] bg-white border border-[#13162D]"
+            : "text-[#FDBF17] bg-white border-[1.4px] border-[#13162D]"
         }`}
         onClick={() => setActiveForm("feedback")}
       >
@@ -17,7 +17,7 @@ const NavigationButton = ({ activeForm, setActiveForm }) => {
         className={`px-4 py-2 font-medium rounded-lg focus:outline-none ${
           activeForm === "complaint"
             ? "text-white bg-[#FDBF17]"
-            : "text-[#FDBF17] bg-white border border-[#13162D]"
+            : "text-[#FDBF17] bg-white border-[1.4px] border-[#13162D]"
         }`}
         onClick={() => setActiveForm("complaint")}
       >
