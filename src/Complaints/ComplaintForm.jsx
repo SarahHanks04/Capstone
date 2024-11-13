@@ -119,7 +119,7 @@ const ComplaintForm = () => {
         onRequestClose={() => setModalIsOpen(false)}
         title="Complaint Submitted"
       >
-        <p>Your complaint has been submitted successfully!</p>
+        <p>Your complaint has been successfully submitted! <br />We appreciate your concern and are committed to resolving any issues as quickly as possible.</p>
       </CustomModal>
     </main>
   );
