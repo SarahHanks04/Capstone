@@ -18,7 +18,6 @@ export const handleSubmit = (
   saveFormData,
   setModalIsOpen
 ) => {
-  console.log("Feedback submitted", values);
   saveFormData(values);
   setModalIsOpen(true);
   resetForm();

@@ -14,7 +14,7 @@ const FeedbackForm = () => {
     useContext(CapstoneContext);
 
   return (
-    <main className="flex items-center justify-center min-h-screen overflow-hidden relative">
+    <main className="pt-[2.5rem] w-full">
       <div className="relative w-11/12 max-w-md z-10">
         <div>
           <Formik
@@ -113,9 +113,11 @@ const FeedbackForm = () => {
                   </p>
                   <div className="space-y-4 pt-5">
                     {[
-                      "Don’t need it right now",
-                      "Wasn't useful to me",
-                      "Too expensive",
+                      "Lack of quiet workspaces",
+                      "Wi-Fi connectivity issues",
+                      "Limited networking opportunities",
+                      "High cost",
+                      "Insufficient amenities",
                     ].map((option, index) => (
                       <div key={index} className="flex items-center space-x-4">
                         <Field
