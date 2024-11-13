@@ -48,7 +48,9 @@ const ComplaintForm = () => {
                 </div>
 
                 <div>
-                  <label htmlFor="category" className="text-[18px] font-medium">Complain Category</label>
+                  <label htmlFor="category" className="text-[18px] font-medium">
+                    Complain Category
+                  </label>
                   <Field
                     as="select"
                     name="category"
@@ -67,7 +69,9 @@ const ComplaintForm = () => {
                 </div>
 
                 <div>
-                  <label htmlFor="service" className="text-[18px] font-medium">Service Used</label>
+                  <label htmlFor="service" className="text-[18px] font-medium">
+                    Service Used
+                  </label>
                   <Field
                     as="select"
                     name="service"
@@ -86,7 +90,12 @@ const ComplaintForm = () => {
                 </div>
 
                 <div>
-                  <label htmlFor="complaint" className="text-[18px] font-medium">Your Complaint</label>
+                  <label
+                    htmlFor="complaint"
+                    className="text-[18px] font-medium"
+                  >
+                    Your Complaint
+                  </label>
                   <Field
                     as="textarea"
                     name="complaint"
@@ -119,7 +128,11 @@ const ComplaintForm = () => {
         onRequestClose={() => setModalIsOpen(false)}
         title="Complaint Submitted"
       >
-        <p>Your complaint has been successfully submitted! <br />We appreciate your concern and are committed to resolving any issues as quickly as possible.</p>
+        <p>
+          Your complaint has been successfully submitted! <br />
+          We appreciate your concern and are committed to resolving any issues
+          as quickly as possible.
+        </p>
       </CustomModal>
     </main>
   );

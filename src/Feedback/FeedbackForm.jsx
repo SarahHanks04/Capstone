@@ -150,7 +150,10 @@ const FeedbackForm = () => {
         onRequestClose={() => setModalIsOpen(false)}
         title="Feedback Submitted"
       >
-        <p>Your feedback has been submitted successfully!</p>
+        <p>
+          Thank you for your feedback! <br /> We value your input and will use
+          it to help improve our services.
+        </p>
       </CustomModal>
     </main>
   );
