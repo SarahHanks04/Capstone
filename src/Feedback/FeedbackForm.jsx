@@ -28,13 +28,13 @@ const FeedbackForm = () => {
               <Form className="space-y-6">
                 {/* Question 1 */}
                 <section>
-                  <label htmlFor="question1" className="font-semibold">
+                  <label htmlFor="question1" className="font-semibold text-xl">
                     Question 1
                   </label>
-                  <p className="text-gray-600">
+                  <p className="text-gray-600 pt-2">
                     How satisfied are you after using our services?
                   </p>
-                  <div className="flex justify-between mt-2">
+                  <div className="flex justify-between mt-4">
                     {[1, 2, 3, 4, 5].map((value) => (
                       <label key={value} className="flex flex-col items-center">
                         <Field
@@ -56,7 +56,7 @@ const FeedbackForm = () => {
                         >
                           {value}
                         </span>
-                        <span className="mt-1 text-sm text-gray-700">
+                        <span className="mt-1 text-[12px] text-gray-700">
                           {value === 1
                             ? "Not satisfied"
                             : value === 5
@@ -71,10 +71,10 @@ const FeedbackForm = () => {
 
                 {/* Question 2 */}
                 <section>
-                  <label htmlFor="question2" className="font-semibold">
+                  <label htmlFor="question2" className="font-semibold text-xl">
                     Question 2
                   </label>
-                  <p className="text-gray-600">
+                  <p className="text-gray-600 pt-2">
                     How would you rate our service?
                   </p>
                   <div className="flex justify-between mt-2">
@@ -105,19 +105,19 @@ const FeedbackForm = () => {
 
                 {/* Question 3 */}
                 <section>
-                  <label htmlFor="question3" className="font-semibold">
+                  <label htmlFor="question3" className="font-semibold text-xl">
                     Question 3
                   </label>
-                  <p className="text-gray-600">
+                  <p className="text-gray-600 pt-3">
                     What are your reasons for not wanting to use our services?
                   </p>
-                  <div className="space-y-2">
+                  <div className="space-y-4 pt-5">
                     {[
                       "Don’t need it right now",
                       "Wasn't useful to me",
                       "Too expensive",
                     ].map((option, index) => (
-                      <div key={index} className="flex items-center space-x-2">
+                      <div key={index} className="flex items-center space-x-4">
                         <Field
                           type="checkbox"
                           name="reasons"
