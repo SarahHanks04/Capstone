@@ -1,10 +1,13 @@
 import React from "react";
+import { mount } from "cypress/react18";
 import NavigationButton from "./NavigationButton";
 
-describe("<NavigationButton />", () => {
-  it("renders the component", () => {
-    cy.mount(
-      <NavigationButton activeForm="feedback" setActiveForm={cy.stub()} />
+describe("NavigationButton component", () => {
+  it("should toggle between Feedback and Complaints forms on button click", () => {
+    const setActiveForm = cy.stub();
+    const activeForm = "feedback";
+    mount(
+      <NavigationButton activeForm={activeForm} setActiveForm={setActiveForm} />
     );
     // To Check For The Two Buttons
     cy.get("button").should("have.length", 2);
@@ -17,17 +20,10 @@ describe("<NavigationButton />", () => {
 
     // Check the "Feedback" button for active styles
     cy.get("button").first().should("have.class", "feedback");
-    cy.get("button")
-      .first()
-      .should("not.have.class", "complaint");
+    cy.get("button").first().should("not.have.class", "complaint");
 
     // Check The "Complaints" Button For Inactive Styles
-    cy.get("button")
-      .last()
-      .should(
-        "have.class",
-        "complaint"
-      );
+    cy.get("button").last().should("have.class", "complaint");
   });
 
   it("updates active form and applies correct styles on button click", () => {
