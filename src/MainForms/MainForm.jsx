@@ -10,7 +10,7 @@ const MainForm = () => {
 
   return (
     <main className="flex items-center justify-center min-h-screen bg-gray-100 overflow-hidden relative sm:pt-10 sm:pb-10 lg:pt-16 lg:pb-16">
-      <section className="relative w-11/12 max-w-xs sm:max-w-sm md:max-w-md lg:max-w-lg xl:max-w-xl z-10">
+      <section className="relative w-11/12 max-w-xs sm:max-w-md md:max-w-lg lg:max-w-2xl xl:max-w-3xl z-10">
         {/* Rotating Background Div */}
         <div className="absolute inset-0 transform rotate-[-5deg] bg-[#FDBF17] rounded-xl z-10 h-full w-full"></div>
 
@@ -141,7 +141,15 @@ const MainForm = () => {
 
           {/* Conditional Rendering of Forms */}
           <div className="w-full">
-            {activeForm === "feedback" ? <FeedbackForm /> : <ComplaintForm />}
+            {activeForm === "feedback" ? (
+              <div className="w-full">
+                <FeedbackForm />
+              </div>
+            ) : (
+              <div className="w-full">
+                <ComplaintForm />
+              </div>
+            )}
           </div>
         </div>
       </section>

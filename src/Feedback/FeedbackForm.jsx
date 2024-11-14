@@ -15,7 +15,7 @@ const FeedbackForm = () => {
 
   return (
     <main className="pt-[2.5rem] w-full">
-      <div className="relative w-11/12 max-w-md z-10">
+      <div className="relative w-11/12 max-w-xs sm:max-w-md md:max-w-lg lg:max-w-2xl xl:max-w-3xl z-10">
         <div>
           <Formik
             initialValues={initialValues}

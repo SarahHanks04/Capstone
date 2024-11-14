@@ -18,7 +18,7 @@ const ComplaintForm = () => {
 
   return (
     <main className="pt-[2.2rem] w-full">
-      <section className="relative w-11/12 max-w-md z-10">
+      <section className="relative w-11/12 max-w-xs sm:max-w-md md:max-w-lg lg:max-w-2xl xl:max-w-3xl z-10">
         <div>
           <hr className="mb-6" />
           <Formik
@@ -60,7 +60,9 @@ const ComplaintForm = () => {
                         : "border-gray-300"
                     }`}
                   >
-                    <option value="" disabled>Select a category</option>
+                    <option value="" disabled>
+                      Select a category
+                    </option>
                     <option value="service">Service</option>
                     <option value="product">Product</option>
                     <option value="support">Support</option>
@@ -81,7 +83,9 @@ const ComplaintForm = () => {
                         : "border-gray-300"
                     }`}
                   >
-                    <option value="" disabled>Select a service</option>
+                    <option value="" disabled>
+                      Select a service
+                    </option>
                     <option value="internet">Internet</option>
                     <option value="workspace">Workspace Rental</option>
                     <option value="meeting-room">Meeting Room Access</option>
