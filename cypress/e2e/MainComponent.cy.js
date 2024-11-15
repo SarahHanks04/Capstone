@@ -1,5 +1,5 @@
 describe("Entire Component", () => {
-  it("passes", () => {
+  it("Testing Entire Component", () => {
     cy.visit("http://localhost:5175/");
   });
 });

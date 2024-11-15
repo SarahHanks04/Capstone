@@ -8,57 +8,6 @@
     />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Complaint & Feedback Form</title>
-    // describe("MainForm E2E Test", () => { // beforeEach(() => { //
-    cy.visit("http://localhost:5173/"); // }); // it("should display the
-    navigation buttons and toggle between forms", () => { // // Check that
-    navigation buttons exist // cy.contains("Feedback").should("exist"); //
-    cy.contains("Complaint").should("exist"); // // Click Feedback button and
-    verify FeedbackForm is displayed // cy.contains("Feedback").click(); //
-    cy.get("main").within(() => { // cy.contains("Submit
-    Feedback").should("exist"); // }); // // Click Complaint button and verify
-    ComplaintForm is displayed // cy.contains("Complaint").click(); //
-    cy.get("main").within(() => { // cy.contains("Submit
-    Complaint").should("exist"); // }); // }); // it("should display validation
-    errors when submitting empty FeedbackForm", () => { //
-    cy.contains("Feedback").click(); //
-    cy.get("button[type='submit']").contains("Submit Feedback").click(); // //
-    Check for error messages in FeedbackForm //
-    cy.get('[data-testid="satisfaction-error"]').should( // "contain.text", //
-    "This field is required" // ); //
-    cy.get('[data-testid="emojis-error"]').should( // "contain.text", // "This
-    field is required" // ); // }); // it("should display validation errors when
-    submitting empty ComplaintForm", () => { //
-    cy.contains("Complaint").click(); //
-    cy.get("button[type='submit']").contains("Submit Complaint").click(); // //
-    Check for error messages in ComplaintForm //
-    cy.get('[data-testid="email-error"]').should( // "contain.text", // "This
-    field is required" // ); // cy.get('[data-testid="category-error"]').should(
-    // "contain.text", // "This field is required" // ); //
-    cy.get('[data-testid="service-error"]').should( // "contain.text", // "This
-    field is required" // ); //
-    cy.get('[data-testid="complaint-error"]').should( // "contain.text", //
-    "This field is required" // ); // }); // it("should successfully submit the
-    FeedbackForm and display a success message", () => { //
-    cy.contains("Feedback").click(); // // Fill out FeedbackForm fields (adjust
-    selectors and values as needed) //
-    cy.get("input[name='satisfaction']").check("5"); //
-    cy.get("input[name='emojis']").check("3"); // // Submit the form //
-    cy.get("button[type='submit']").contains("Submit Feedback").click(); // //
-    Check for success message in the modal // cy.get(".modal").within(() => { //
-    cy.contains("Feedback Submitted").should("exist"); // cy.contains("Thank you
-    for your feedback!").should("exist"); // }); // }); // it("should
-    successfully submit the ComplaintForm and display a success message", () =>
-    { // cy.contains("Complaint").click(); // // Fill out ComplaintForm fields
-    (adjust selectors and values as needed) //
-    cy.get("input[name='email']").type("user@example.com"); //
-    cy.get("select[name='category']").select("Service"); //
-    cy.get("select[name='service']").select("Internet"); //
-    cy.get("textarea[name='complaint']").type("Sample complaint description");
-    // // Submit the form // cy.get("button[type='submit']").contains("Submit
-    Complaint").click(); // // Check for success message in the modal //
-    cy.get(".modal").within(() => { // cy.contains("Complaint
-    Submitted").should("exist"); // cy.contains("Your complaint has been
-    successfully submitted!").should( // "exist" // ); // }); // }); // });
   </head>
   <body>
     <div id="root"></div>
