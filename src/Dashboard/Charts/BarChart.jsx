@@ -106,13 +106,13 @@ const BarChart = () => {
       {
         label: "Feedback",
         data: feedbackCounts,
-        backgroundColor: "rgb(75, 192, 192)",
+        backgroundColor: "#FDBF17",
         stack: "Stack 0",
       },
       {
         label: "Complaints",
         data: complaintCounts,
-        backgroundColor: "rgb(255, 99, 132)",
+        backgroundColor: "#13162D",
         stack: "Stack 0",
       },
     ],
