@@ -10,6 +10,7 @@ import {
 } from "chart.js";
 import { Bar } from "react-chartjs-2";
 import { CapstoneContext } from "../../Context/CapstoneContext";
+import { div } from "framer-motion/client";
 
 // Register necessary Chart.js components
 ChartJS.register(
@@ -35,7 +36,7 @@ export const options = {
   responsive: true,
   scales: {
     x: {
-      stacked: true,
+      stacke: true,
       grid: {
         display: false, // Remove vertical grid lines
       },
@@ -51,6 +52,12 @@ export const options = {
       },
     },
   },
+  // elements: {
+  //   bar: {
+  //     barThickness: 10, // Set the maximum bar thickness for better spacing
+  //     barPercentage: 0.9, // Adjust spacing between grouped bars
+  //   },
+  // },
 };
 
 // BarChart Component
@@ -74,15 +81,6 @@ const BarChart = () => {
   ];
 
   // Calculate counts for each day
-  // const feedbackCounts = useMemo(() =>
-  //   weeks.map(
-  //     (week) => feedbackData.filter((item) => item.date === week).length), [feedbackData]
-  // );
-  // const complaintCounts = useMemo(() =>
-  //   weeks.map(
-  //     (week) => complaintData.filter((item) => item.date === week).length), [complaintData]
-  // );
-
   const feedbackCounts = useMemo(
     () =>
       weeks.map(
@@ -107,18 +105,22 @@ const BarChart = () => {
         label: "Feedback",
         data: feedbackCounts,
         backgroundColor: "#FDBF17",
-        stack: "Stack 0",
+        stack: "Stack 1",
       },
       {
         label: "Complaints",
         data: complaintCounts,
         backgroundColor: "#13162D",
-        stack: "Stack 0",
+        stack: "Stack 2",
       },
     ],
   };
 
-  return <Bar options={options} data={data} />;
+  return (
+    <div>
+      <Bar options={options} data={data} />
+    </div>
+  );
 };
 
 export default BarChart;
