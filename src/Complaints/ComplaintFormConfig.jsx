@@ -1,3 +1,32 @@
+// import * as Yup from "yup";
+
+// export const initialValues = {
+//   email: "",
+//   category: "",
+//   service: "",
+//   complaint: "",
+// };
+
+// export const validationSchema = Yup.object({
+//   email: Yup.string().email("Invalid email address").required("Required"),
+//   category: Yup.string().required("Please select a category"),
+//   service: Yup.string().required("Please select a service"),
+//   complaint: Yup.string().required("Complaint description is required"),
+// });
+
+// export const handleSubmit = (
+//   values,
+//   { resetForm },
+//   saveFormData,
+//   setModalIsOpen
+// ) => {
+//   console.log(values);
+//   saveFormData(values);
+//   setModalIsOpen(true);
+//   resetForm();
+// };
+
+
 import * as Yup from "yup";
 
 export const initialValues = {
@@ -20,8 +49,8 @@ export const handleSubmit = (
   saveFormData,
   setModalIsOpen
 ) => {
-  console.log(values);
-  saveFormData(values);
+  saveFormData("complaints", values);
   setModalIsOpen(true);
   resetForm();
 };
+
