@@ -11,12 +11,6 @@ import {
 import CustomModal from "../Component/CustomModal";
 
 Modal.setAppElement("#root");
-// Conditionally set the app element based on the environment
-// if (typeof document !== "undefined" && document.getElementById("root")) {
-//   Modal.setAppElement("#root");
-// } else {
-//   Modal.setAppElement("body"); // Set to body if #root is not found
-// }
 
 const ComplaintForm = () => {
   const { saveFormData, modalIsOpen, setModalIsOpen } =

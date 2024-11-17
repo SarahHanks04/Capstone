@@ -10,9 +10,9 @@ import {
 } from "chart.js";
 import { Bar } from "react-chartjs-2";
 import { CapstoneContext } from "../../Context/CapstoneContext";
-import { div } from "framer-motion/client";
 
-// Register necessary Chart.js components
+
+// Register Chart.js components
 ChartJS.register(
   CategoryScale,
   LinearScale,
@@ -22,7 +22,7 @@ ChartJS.register(
   Legend
 );
 
-// Options for the bar chart
+// Options for bar chart
 export const options = {
   plugins: {
     title: {
@@ -117,7 +117,7 @@ const BarChart = () => {
   };
 
   return (
-    <div>
+    <div className="">
       <Bar options={options} data={data} />
     </div>
   );
