@@ -8,8 +8,8 @@ function App() {
   return (
     <div>
       <MainForm />
-      <AdminDashboard />
-      <RecentIssue />
+      {/* <AdminDashboard /> */}
+      {/* <RecentIssue /> */}
     </div>
   );
 }

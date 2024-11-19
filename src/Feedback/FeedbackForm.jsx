@@ -21,7 +21,7 @@ const FeedbackForm = () => {
             initialValues={initialValues}
             validationSchema={validationSchema}
             onSubmit={(values, actions) =>
-              handleSubmit(values, actions, saveFormData, setModalIsOpen)
+              handleSubmit(values, actions, setModalIsOpen)
             }
           >
             {({ values, touched, errors, isSubmitting }) => (
