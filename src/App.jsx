@@ -6,7 +6,7 @@ import AdminDashboard from "./Dashboard/Admin/AdminDashboard";
 function App() {
   return (
     <div>
-      <MainForm />
+      {/* <MainForm /> */}
       <AdminDashboard />
     </div>
   );

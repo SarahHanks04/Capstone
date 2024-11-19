@@ -11,8 +11,6 @@ import {
 import { Bar } from "react-chartjs-2";
 import { CapstoneContext } from "../../Context/CapstoneContext";
 
-
-// Register Chart.js components
 ChartJS.register(
   CategoryScale,
   LinearScale,
@@ -22,7 +20,6 @@ ChartJS.register(
   Legend
 );
 
-// Options for bar chart
 export const options = {
   plugins: {
     title: {
@@ -38,17 +35,17 @@ export const options = {
     x: {
       stacke: true,
       grid: {
-        display: false, // Remove vertical grid lines
+        display: false,
       },
     },
     y: {
       stacked: true,
       beginAtZero: true,
       ticks: {
-        stepSize: 2, // Set intervals to 2
+        stepSize: 2,
       },
       grid: {
-        display: false, // Remove horizontal grid lines
+        display: false,
       },
     },
   },
@@ -63,7 +60,7 @@ const BarChart = () => {
   const complaintData = formData.complaints || [];
   console.log(complaintData);
 
-  // Days of the week for grouping data
+  // Days Of The Week For Grouping Data
   const weeks = [
     "Sunday",
     "Monday",
@@ -74,21 +71,13 @@ const BarChart = () => {
     "Saturday",
   ];
 
-  // Calculate counts for each day
-  const feedbackCounts = useMemo(
-    () =>
-      weeks.map(
-        (week) => feedbackData.filter((item) => item.date === week).length
-      ),
-    [feedbackData]
+  // Calculate The Counts For Each Day
+  const feedbackCounts = weeks.map(
+    (week) => feedbackData.filter((item) => item.date === week).length
   );
 
-  const complaintCounts = useMemo(
-    () =>
-      weeks.map(
-        (week) => complaintData.filter((item) => item.date === week).length
-      ),
-    [complaintData]
+  const complaintCounts = weeks.map(
+    (week) => complaintData.filter((item) => item.date === week).length
   );
 
   // Chart data
@@ -111,7 +100,7 @@ const BarChart = () => {
   };
 
   return (
-    <div className="">
+    <div className="w-full h-full">
       <Bar options={options} data={data} />
     </div>
   );
