@@ -42,18 +42,11 @@ export const validationSchema = Yup.object({
 
 export const handleSubmit = async (values, { resetForm }, setModalIsOpen) => {
   try {
-    await axios.post("http://localhost:3000/feedback", values); // Post to JSON Server
+    console.log("Submitting feedback:", values);
+    await axios.post("http://localhost:4000/feedback", values);
     setModalIsOpen(true);
     resetForm();
   } catch (error) {
     console.error("Error submitting feedback:", error);
   }
 };
- // Log any errors here
-//  export const handleFormSubmit = async (values, actions) => {
-//     try {
-//       await handleSubmit(values, actions, setModalIsOpen);
-//     } catch (error) {
-//       console.error("Error in form submission:", error);
-//     }
-//   };

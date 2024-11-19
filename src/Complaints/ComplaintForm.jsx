@@ -25,7 +25,7 @@ const ComplaintForm = () => {
             initialValues={initialValues}
             validationSchema={validationSchema}
             onSubmit={(values, actions) =>
-              handleSubmit(values, actions, saveFormData, setModalIsOpen)
+              handleSubmit(values, actions, setModalIsOpen)
             }
           >
             {({ touched, errors, isSubmitting }) => (

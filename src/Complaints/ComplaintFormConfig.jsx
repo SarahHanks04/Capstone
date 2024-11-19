@@ -46,7 +46,8 @@ export const validationSchema = Yup.object({
 
 export const handleSubmit = async (values, { resetForm }, setModalIsOpen) => {
   try {
-    await axios.post("http://localhost:3000/complaint", values); // Post to JSON Server
+    console.log("Submitting complaint:", values);
+    await axios.post("http://localhost:4000/complaint", values);
     setModalIsOpen(true);
     resetForm();
   } catch (error) {
