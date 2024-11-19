@@ -52,12 +52,6 @@ export const options = {
       },
     },
   },
-  // elements: {
-  //   bar: {
-  //     barThickness: 10, // Set the maximum bar thickness for better spacing
-  //     barPercentage: 0.9, // Adjust spacing between grouped bars
-  //   },
-  // },
 };
 
 // BarChart Component
