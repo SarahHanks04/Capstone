@@ -1,4 +1,4 @@
-import React, { useContext, useMemo } from "react";
+import React, { useContext } from "react";
 import {
   Chart as ChartJS,
   CategoryScale,
@@ -10,6 +10,7 @@ import {
 } from "chart.js";
 import { Bar } from "react-chartjs-2";
 import { CapstoneContext } from "../../Context/CapstoneContext";
+import ClearDataButton from "../ClearDataButton/ClearDataButton";
 
 ChartJS.register(
   CategoryScale,
@@ -71,13 +72,24 @@ const BarChart = () => {
     "Saturday",
   ];
 
-  // Calculate The Counts For Each Day
   const feedbackCounts = weeks.map(
-    (week) => feedbackData.filter((item) => item.date === week).length
+    (week) =>
+      feedbackData.filter(
+        (item) =>
+          new Date(item.date).toLocaleDateString("en-US", {
+            weekday: "long",
+          }) === week
+      ).length
   );
 
   const complaintCounts = weeks.map(
-    (week) => complaintData.filter((item) => item.date === week).length
+    (week) =>
+      complaintData.filter(
+        (item) =>
+          new Date(item.date).toLocaleDateString("en-US", {
+            weekday: "long",
+          }) === week
+      ).length
   );
 
   // Chart data
@@ -102,6 +114,9 @@ const BarChart = () => {
   return (
     <div className="w-full h-full">
       <Bar options={options} data={data} />
+      <div className="text-right pt-3">
+        <ClearDataButton />
+      </div>
     </div>
   );
 };

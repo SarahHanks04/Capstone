@@ -74,11 +74,10 @@ const CapstoneProvider = ({ children }) => {
       localStorage.setItem("formData", JSON.stringify(formData));
     } catch (error) {
       console.error("Error saving data to localStorage", error);
-      // You can add additional handling like clearing old data here if needed
     }
   }, [formData]);
 
-  // Save Form Data to localStorage
+  // Save FormData to localStorage
   const saveFormData = (type, data) => {
     const currentDate = new Date().toLocaleDateString("en-US", {
       day: "numeric",
@@ -94,7 +93,7 @@ const CapstoneProvider = ({ children }) => {
     });
   };
 
-  // Delete Activity from formData
+  // Delete Activities From FormData
   const deleteActivity = (type, index) => {
     setFormData((prevData) => {
       const updatedData = {
@@ -105,12 +104,25 @@ const CapstoneProvider = ({ children }) => {
     });
   };
 
+  const clearAllData = () => {
+  if (window.confirm("Are you sure you want to clear all data?")) {
+    setFormData({
+      feedback: [],
+      complaints: [],
+    });
+    localStorage.removeItem("formData");
+  }
+};
+
+
   const values = {
     formData,
+    setFormData,
     saveFormData,
     deleteActivity,
     modalIsOpen,
     setModalIsOpen,
+    clearAllData,
   };
 
   return (
