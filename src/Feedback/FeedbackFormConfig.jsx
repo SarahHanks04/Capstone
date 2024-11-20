@@ -27,6 +27,7 @@
 
 import * as Yup from "yup";
 import axios from "axios";
+import { format } from "date-fns";
 
 export const initialValues = {
   satisfaction: "",
@@ -42,8 +43,11 @@ export const validationSchema = Yup.object({
 
 export const handleSubmit = async (values, { resetForm }, setModalIsOpen) => {
   try {
-    console.log("Submitting feedback:", values);
-    await axios.post("http://localhost:4000/feedback", values);
+    const currentDate = format(new Date(), "MMMM do, yyyy");
+    const data = { ...values, date: currentDate };
+    console.log("Submitting feedback:", data);
+    
+    await axios.post("http://localhost:4000/feedback", data);
     setModalIsOpen(true);
     resetForm();
   } catch (error) {

@@ -29,6 +29,7 @@
 
 import * as Yup from "yup";
 import axios from "axios";
+import { format } from "date-fns";
 
 export const initialValues = {
   email: "",
@@ -46,8 +47,11 @@ export const validationSchema = Yup.object({
 
 export const handleSubmit = async (values, { resetForm }, setModalIsOpen) => {
   try {
-    console.log("Submitting complaint:", values);
-    await axios.post("http://localhost:4000/complaint", values);
+    const currentDate = format(new Date(), "MMMM do, yyyy");
+    const data = { ...values, date: currentDate };
+    console.log("Submitting complaint:", data);
+    
+    await axios.post("http://localhost:4000/complaint", data);
     setModalIsOpen(true);
     resetForm();
   } catch (error) {
