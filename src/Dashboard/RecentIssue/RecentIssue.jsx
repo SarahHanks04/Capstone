@@ -14,24 +14,24 @@ const RecentIssue = () => {
   };
 
   // Function To Get The Day Suffix
-  // const getDaySuffix = (day) =>
-  //   day % 10 === 1 && day !== 11
-  //     ? "st"
-  //     : day % 10 === 2 && day !== 12
-  //     ? "nd"
-  //     : day % 10 === 3 && day !== 13
-  //     ? "rd"
-  //     : "th";
+  const getDaySuffix = (day) =>
+    day % 10 === 1 && day !== 11
+      ? "st"
+      : day % 10 === 2 && day !== 12
+      ? "nd"
+      : day % 10 === 3 && day !== 13
+      ? "rd"
+      : "th";
 
   // Format Complaint Date
-  // const formatComplaintDate = (dateString) => {
-  //   const date = new Date(dateString);
-  //   const day = date.getDate();
-  //   return `${day}${getDaySuffix(day)} ${date.toLocaleString("default", {
-  //     month: "long",
-  //     year: "numeric",
-  //   })}`;
-  // };
+  const formatComplaintDate = (dateString) => {
+    const date = new Date(dateString);
+    const day = date.getDate();
+    return `${day}${getDaySuffix(day)} ${date.toLocaleString("default", {
+      month: "long",
+      year: "numeric",
+    })}`;
+  };
 
   return (
     <section className="p-4 w-full mx-auto">
