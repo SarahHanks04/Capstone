@@ -1,23 +1,21 @@
 import React, { createContext, useState } from "react";
 import axios from "axios";
-import { format } from "date-fns"; 
+import { format } from "date-fns";
 
 export const CapstoneContext = createContext();
 
 const CapstoneProvider = ({ children }) => {
   const [modalIsOpen, setModalIsOpen] = useState(false);
 
-  // Save FormData to the JSON server
+
+  // Save FormData To The JSON Server
   const saveFormData = async (type, data) => {
     const currentDate = format(new Date(), "MMMM do, yyyy");
     const newData = { ...data, date: currentDate };
 
     try {
-      if (type === "feedback") {
-        await axios.post("http://localhost:4000/feedback", newData);
-      } else if (type === "complaints") {
-        await axios.post("http://localhost:4000/complaint", newData);
-      }
+      await axios.post(`http://localhost:4000/${type}`, newData);
+      console.log("Data saved successfully");
     } catch (error) {
       console.error("Error saving data:", error);
     }
