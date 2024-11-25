@@ -103,7 +103,8 @@
       "category": "support",
       "service": "workspace",
       "complaint": "Testing, testing",
-      "date": "November 20th, 2024"
+      "date": "November 20th, 2024",
+      "status": "resolved"
     },
     {
       "id": "c4d0",
@@ -111,7 +112,8 @@
       "category": "service",
       "service": "meeting-room",
       "complaint": "Testing!",
-      "date": "November 20th, 2024"
+      "date": "November 20th, 2024",
+      "status": "unresolved"
     },
     {
       "id": "7700",
@@ -119,7 +121,8 @@
       "category": "product",
       "service": "workspace",
       "complaint": "Testing 3",
-      "date": "November 20th, 2024"
+      "date": "November 20th, 2024",
+      "status": "resolved"
     },
     {
       "id": "7b2b",
@@ -127,7 +130,8 @@
       "category": "service",
       "service": "workspace",
       "complaint": "Capstong Testing",
-      "date": "November 20th, 2024"
+      "date": "November 20th, 2024",
+      "status": "resolved"
     },
     {
       "id": "4f04",
@@ -135,7 +139,8 @@
       "category": "service",
       "service": "meeting-room",
       "complaint": "Dashboard testing",
-      "date": "November 20th, 2024"
+      "date": "November 20th, 2024",
+      "status": "resolved"
     },
     {
       "id": "a8a9",
@@ -143,7 +148,8 @@
       "category": "service",
       "service": "internet",
       "complaint": "Latest test",
-      "date": "November 20th, 2024"
+      "date": "November 20th, 2024",
+      "status": "unresolved"
     },
     {
       "id": "f18b",
@@ -151,7 +157,8 @@
       "category": "service",
       "service": "internet",
       "complaint": "Last try",
-      "date": "November 20th, 2024"
+      "date": "November 20th, 2024",
+      "status": "resolved"
     },
     {
       "id": "5bdd",
@@ -159,7 +166,8 @@
       "category": "product",
       "service": "internet",
       "complaint": "sssss",
-      "date": "November 21st, 2024"
+      "date": "November 21st, 2024",
+      "status": "resolved"
     },
     {
       "id": "aafc",
@@ -167,7 +175,8 @@
       "category": "product",
       "service": "internet",
       "complaint": "poor internet",
-      "date": "November 21st, 2024"
+      "date": "November 21st, 2024",
+      "status": "unresolved"
     },
     {
       "id": "6c48",
@@ -175,7 +184,8 @@
       "category": "product",
       "service": "internet",
       "complaint": "Great service",
-      "date": "November 21st, 2024"
+      "date": "November 21st, 2024",
+      "status": "unresolved"
     },
     {
       "id": "f67d",
@@ -183,7 +193,16 @@
       "category": "service",
       "service": "meeting-room",
       "complaint": "yy",
-      "date": "November 24th, 2024"
+      "date": "November 24th, 2024",
+      "status": "unresolved"
+    },
+    {
+      "id": "ce3b",
+      "email": "gabrielakoje@gmail.com",
+      "category": "support",
+      "service": "meeting-room",
+      "complaint": "bbbbb",
+      "date": "November 25th, 2024"
     }
   ]
 }
