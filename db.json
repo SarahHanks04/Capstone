@@ -94,6 +94,54 @@
         "High cost"
       ],
       "date": "November 24th, 2024"
+    },
+    {
+      "id": "031e",
+      "satisfaction": "5",
+      "emojis": "4",
+      "reasons": [
+        "Lack of quiet workspaces"
+      ],
+      "date": "November 25th, 2024"
+    },
+    {
+      "id": "a523",
+      "satisfaction": "1",
+      "emojis": "1",
+      "reasons": [
+        "Insufficient amenities",
+        "Wi-Fi connectivity issues"
+      ],
+      "date": "November 26th, 2024"
+    },
+    {
+      "id": "db29",
+      "satisfaction": "3",
+      "emojis": "5",
+      "reasons": [
+        "Wi-Fi connectivity issues",
+        "Limited networking opportunities"
+      ],
+      "date": "November 26th, 2024"
+    },
+    {
+      "id": "9957",
+      "satisfaction": "5",
+      "emojis": "2",
+      "reasons": [
+        "High cost",
+        "Insufficient amenities"
+      ],
+      "date": "November 26th, 2024"
+    },
+    {
+      "id": "4a11",
+      "satisfaction": "1",
+      "emojis": "3",
+      "reasons": [
+        "Wi-Fi connectivity issues"
+      ],
+      "date": "November 26th, 2024"
     }
   ],
   "complaint": [
@@ -202,7 +250,44 @@
       "category": "support",
       "service": "meeting-room",
       "complaint": "bbbbb",
-      "date": "November 25th, 2024"
+      "date": "November 25th, 2024",
+      "status": "resolved"
+    },
+    {
+      "id": "9498",
+      "email": "gabrielakoje@gmail.com",
+      "category": "product",
+      "service": "workspace",
+      "complaint": "aaaaaa",
+      "date": "November 25th, 2024",
+      "status": "resolved"
+    },
+    {
+      "id": "421a",
+      "email": "Sarah@gmail.com",
+      "category": "service",
+      "service": "internet",
+      "complaint": "Percentage trial",
+      "date": "November 26th, 2024",
+      "status":"resolved"
+    },
+    {
+      "id": "35ed",
+      "email": "Sarah@yahoo.com",
+      "category": "product",
+      "service": "workspace",
+      "complaint": "More trial",
+      "date": "November 26th, 2024",
+      "status":"unresolved"
+    },
+    {
+      "id": "d846",
+      "email": "gabrielakoje@gmail.com",
+      "category": "support",
+      "service": "meeting-room",
+      "complaint": "Test",
+      "date": "November 26th, 2024",
+      "status":"unresolved"
     }
   ]
 }
