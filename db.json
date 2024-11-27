@@ -152,7 +152,7 @@
       "service": "workspace",
       "complaint": "Testing, testing",
       "date": "November 20th, 2024",
-      "status": "resolved"
+      "status": "unresolved"
     },
     {
       "id": "c4d0",
@@ -179,7 +179,7 @@
       "service": "workspace",
       "complaint": "Capstong Testing",
       "date": "November 20th, 2024",
-      "status": "resolved"
+      "status": "unresolved"
     },
     {
       "id": "4f04",
@@ -269,7 +269,7 @@
       "service": "internet",
       "complaint": "Percentage trial",
       "date": "November 26th, 2024",
-      "status":"resolved"
+      "status": "resolved"
     },
     {
       "id": "35ed",
@@ -278,16 +278,16 @@
       "service": "workspace",
       "complaint": "More trial",
       "date": "November 26th, 2024",
-      "status":"unresolved"
+      "status": "resolved"
     },
     {
       "id": "d846",
       "email": "gabrielakoje@gmail.com",
       "category": "support",
       "service": "meeting-room",
-      "complaint": "Test",
+      "complaint": "Testing",
       "date": "November 26th, 2024",
-      "status":"unresolved"
+      "status": "unresolved"
     }
   ]
 }
