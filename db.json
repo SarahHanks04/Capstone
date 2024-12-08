@@ -142,6 +142,15 @@
         "Wi-Fi connectivity issues"
       ],
       "date": "November 26th, 2024"
+    },
+    {
+      "id": "9468",
+      "satisfaction": "3",
+      "emojis": "5",
+      "reasons": [
+        "Lack of quiet workspaces"
+      ],
+      "date": "November 28th, 2024"
     }
   ],
   "complaint": [
@@ -152,16 +161,7 @@
       "service": "workspace",
       "complaint": "Testing, testing",
       "date": "November 20th, 2024",
-      "status": "unresolved"
-    },
-    {
-      "id": "c4d0",
-      "email": "Sarah@gmail.com",
-      "category": "service",
-      "service": "meeting-room",
-      "complaint": "Testing!",
-      "date": "November 20th, 2024",
-      "status": "unresolved"
+      "status": "resolved"
     },
     {
       "id": "7700",
@@ -179,7 +179,7 @@
       "service": "workspace",
       "complaint": "Capstong Testing",
       "date": "November 20th, 2024",
-      "status": "unresolved"
+      "status": "resolved"
     },
     {
       "id": "4f04",
@@ -287,7 +287,24 @@
       "service": "meeting-room",
       "complaint": "Testing",
       "date": "November 26th, 2024",
-      "status": "unresolved"
+      "status": "resolved"
+    },
+    {
+      "id": "c4d0",
+      "email": "Sarah@gmail.com",
+      "category": "service",
+      "service": "meeting-room",
+      "complaint": "Testing!",
+      "date": "November 20th, 2024",
+      "status": "resolved"
+    },
+    {
+      "id": "49b6",
+      "email": "gabrielakoje@gmail.com",
+      "category": "support",
+      "service": "workspace",
+      "complaint": "Thursday!",
+      "date": "November 28th, 2024"
     }
   ]
 }
