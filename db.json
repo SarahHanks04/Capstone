@@ -304,7 +304,21 @@
       "category": "support",
       "service": "workspace",
       "complaint": "Thursday!",
-      "date": "November 28th, 2024"
+      "date": "November 28th, 2024",
+      "status": "unresolved"
+    }
+  ],
+  
+  "profile": [
+    {
+      "fullName": "Admin@TheBulb",
+      "email": "akoje@yahoo.com",
+      "phone": "+1-22-33-4445",
+      "location": "lagos",
+      "role": "Admin",
+      "membersince": "january 15, 2025",
+      "lastlogin": "July 10,2024",
+      "image": "ttp://www.w3.org/2000/svg"
     }
   ]
 }
