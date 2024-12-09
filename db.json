@@ -4,19 +4,14 @@
       "id": "0558",
       "satisfaction": "4",
       "emojis": "4",
-      "reasons": [
-        "Limited networking opportunities",
-        "High cost"
-      ],
+      "reasons": ["Limited networking opportunities", "High cost"],
       "date": "November 20th, 2024"
     },
     {
       "id": "04b4",
       "satisfaction": "2",
       "emojis": "5",
-      "reasons": [
-        "Lack of quiet workspaces"
-      ],
+      "reasons": ["Lack of quiet workspaces"],
       "date": "November 20th, 2024"
     },
     {
@@ -35,83 +30,63 @@
       "id": "4b59",
       "satisfaction": "4",
       "emojis": "5",
-      "reasons": [
-        "High cost",
-        "Insufficient amenities"
-      ],
+      "reasons": ["High cost", "Insufficient amenities"],
       "date": "November 21st, 2024"
     },
     {
       "id": "79de",
       "satisfaction": "3",
       "emojis": "4",
-      "reasons": [
-        "Wi-Fi connectivity issues"
-      ],
+      "reasons": ["Wi-Fi connectivity issues"],
       "date": "November 21st, 2024"
     },
     {
       "id": "0daf",
       "satisfaction": "3",
       "emojis": "4",
-      "reasons": [
-        "High cost"
-      ],
+      "reasons": ["High cost"],
       "date": "November 21st, 2024"
     },
     {
       "id": "3651",
       "satisfaction": "2",
       "emojis": "3",
-      "reasons": [
-        "Lack of quiet workspaces"
-      ],
+      "reasons": ["Lack of quiet workspaces"],
       "date": "November 21st, 2024"
     },
     {
       "id": "5080",
       "satisfaction": "3",
       "emojis": "3",
-      "reasons": [
-        "High cost"
-      ],
+      "reasons": ["High cost"],
       "date": "November 21st, 2024"
     },
     {
       "id": "5bb8",
       "satisfaction": "3",
       "emojis": "3",
-      "reasons": [
-        "Wi-Fi connectivity issues"
-      ],
+      "reasons": ["Wi-Fi connectivity issues"],
       "date": "November 24th, 2024"
     },
     {
       "id": "42d4",
       "satisfaction": "4",
       "emojis": "5",
-      "reasons": [
-        "High cost"
-      ],
+      "reasons": ["High cost"],
       "date": "November 24th, 2024"
     },
     {
       "id": "031e",
       "satisfaction": "5",
       "emojis": "4",
-      "reasons": [
-        "Lack of quiet workspaces"
-      ],
+      "reasons": ["Lack of quiet workspaces"],
       "date": "November 25th, 2024"
     },
     {
       "id": "a523",
       "satisfaction": "1",
       "emojis": "1",
-      "reasons": [
-        "Insufficient amenities",
-        "Wi-Fi connectivity issues"
-      ],
+      "reasons": ["Insufficient amenities", "Wi-Fi connectivity issues"],
       "date": "November 26th, 2024"
     },
     {
@@ -128,28 +103,21 @@
       "id": "9957",
       "satisfaction": "5",
       "emojis": "2",
-      "reasons": [
-        "High cost",
-        "Insufficient amenities"
-      ],
+      "reasons": ["High cost", "Insufficient amenities"],
       "date": "November 26th, 2024"
     },
     {
       "id": "4a11",
       "satisfaction": "1",
       "emojis": "3",
-      "reasons": [
-        "Wi-Fi connectivity issues"
-      ],
+      "reasons": ["Wi-Fi connectivity issues"],
       "date": "November 26th, 2024"
     },
     {
       "id": "9468",
       "satisfaction": "3",
       "emojis": "5",
-      "reasons": [
-        "Lack of quiet workspaces"
-      ],
+      "reasons": ["Lack of quiet workspaces"],
       "date": "November 28th, 2024"
     }
   ],
@@ -306,9 +274,18 @@
       "complaint": "Thursday!",
       "date": "November 28th, 2024",
       "status": "unresolved"
+    },
+    {
+      "id": "3a6f",
+      "email": "gabrielakoje@gmail.com",
+      "category": "support",
+      "service": "workspace",
+      "complaint": "Monday morning",
+      "date": "December 9th, 2024",
+      "status": "unresolved"
     }
   ],
-  
+
   "profile": [
     {
       "fullName": "Admin@TheBulb",
