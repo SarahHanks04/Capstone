@@ -9,7 +9,7 @@
     "lint": "eslint . --ext js,jsx --report-unused-disable-directives --max-warnings 0",
     "preview": "vite preview",
     "test": "vitest",
-    "server-json": "json-server --watch db.json"
+    "server-json": "json-server --watch db.json --port 4000"
   },
   "dependencies": {
     "@tabler/icons-react": "^3.24.0",

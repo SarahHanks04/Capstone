@@ -119,6 +119,51 @@
       "emojis": "5",
       "reasons": ["Lack of quiet workspaces"],
       "date": "November 28th, 2024"
+    },
+    {
+      "id": "1654",
+      "satisfaction": "2",
+      "emojis": "4",
+      "reasons": ["Limited networking opportunities", "High cost"],
+      "date": "January 9th, 2025"
+    },
+    {
+      "id": "19fd",
+      "satisfaction": "5",
+      "emojis": "5",
+      "reasons": ["Wi-Fi connectivity issues"],
+      "date": "January 9th, 2025"
+    },
+    {
+      "id": "4261",
+      "satisfaction": "5",
+      "emojis": "3",
+      "reasons": [
+        "Lack of quiet workspaces",
+        "Wi-Fi connectivity issues",
+        "High cost"
+      ],
+      "date": "January 9th, 2025"
+    },
+    {
+      "id": "bc31",
+      "satisfaction": "4",
+      "emojis": "5",
+      "reasons": [
+        "Limited networking opportunities",
+        "Insufficient amenities"
+      ],
+      "date": "January 10th, 2025"
+    },
+    {
+      "id": "c14a",
+      "satisfaction": "5",
+      "emojis": "3",
+      "reasons": [
+        "Wi-Fi connectivity issues",
+        "High cost"
+      ],
+      "date": "January 10th, 2025"
     }
   ],
   "complaint": [
@@ -283,10 +328,55 @@
       "complaint": "Monday morning",
       "date": "December 9th, 2024",
       "status": "unresolved"
+    },
+    {
+      "id": "b74c",
+      "email": "gabrielakoje@gmail.com",
+      "category": "internet",
+      "service": "workspace",
+      "complaint": "Friday",
+      "date": "January 9th, 2025",
+      "status": "unresolved"
+    },
+    {
+      "id": "a31e",
+      "email": "Sarah@gmail.com",
+      "category": "Product",
+      "service": "workspace",
+      "complaint": "Thursday",
+      "date": "January 9th, 2025",
+      "status": "unresolved"
+    },
+    {
+      "id": "f035",
+      "email": "Sarah@gmail.com",
+      "category": "support",
+      "service": "meeting-room",
+      "complaint": "Friday",
+      "date": "January 10th, 2025",
+      "status" : "unresolved"
+    },
+    {
+      "id": "682f",
+      "email": "Sarah@gmail.com",
+      "category": "product",
+      "service": "workspace",
+      "complaint": "Metaaaa",
+      "date": "January 10th, 2025",
+      "status": "unresolved"
+    },
+    {
+      "id": "6b25",
+      "email": "gabrielakoje@gmail.com",
+      "category": "service",
+      "service": "internet",
+      "complaint": "Cooking",
+      "date": "January 10th, 2025",
+      "status": "unresolved"
     }
   ],
-
   
+
   "profile": [
     {
       "fullName": "Admin@TheBulb",
