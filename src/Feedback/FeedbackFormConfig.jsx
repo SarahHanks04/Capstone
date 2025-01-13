@@ -50,7 +50,7 @@ export const validationSchema = Yup.object({
 
 export const handleSubmit = async (values, { resetForm }, setModalIsOpen) => {
   try {
-    const currentDate = new Date().toISOString(); // ISO format date
+    const currentDate = new Date().toISOString(); 
     const data = { ...values, date: currentDate };
     console.log("Submitting feedback:", data);
 
