@@ -9,11 +9,11 @@ const Navbar = () => {
   };
 
   return (
-    <nav className="bg-[#FAF4F4] text-black py-4 px-4 md:px-16 flex justify-between items-center">
+    <nav className="bg-[#FAF4F4] text-black py-4 px-6 md:px-16 flex justify-between items-center">
       {/* Logo */}
       <h1 className="text-2xl md:text-3xl font-bold">Feedback Form</h1>
 
-      {/* Hamburger Button for Small Screens */}
+      {/* Hamburger Button */}
       <button
         onClick={toggleMenu}
         className="text-2xl md:hidden focus:outline-none"
@@ -24,9 +24,9 @@ const Navbar = () => {
 
       {/* Links */}
       <div
-        className={`absolute md:static bg-[#FAF4F4] top-16 left-0 w-full md:w-auto md:flex md:items-center space-y-4 md:space-y-0 md:space-x-8 text-lg ${
+        className={`${
           isMenuOpen ? "block" : "hidden"
-        }`}
+        } absolute md:static top-16 left-0 w-full md:w-auto bg-[#FAF4F4] md:flex md:items-center space-y-4 md:space-y-0 md:space-x-8 text-lg shadow-md md:shadow-none z-50`}
       >
         <Link
           to="/complaint"
