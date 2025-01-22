@@ -4,7 +4,7 @@ import FeedbackBg from "../assets/Feedbackbg.jpeg";
 const WelcomeSection = () => {
   return (
     <section
-      className="relative bg-cover bg-center h-64"
+      className="relative bg-cover bg-center h-[17rem]"
       style={{ backgroundImage: `url(${FeedbackBg})` }}
     >
       <div className="absolute inset-0 bg-opacity-50 flex flex-col justify-center items-center text-white text-center p-4">
