@@ -1,4 +1,3 @@
-// src/components/WelcomeSection.jsx
 import React from "react";
 
 const WelcomeSection = () => {
