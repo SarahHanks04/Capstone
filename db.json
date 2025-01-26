@@ -165,6 +165,20 @@
       "emojis": "1",
       "reasons": ["Limited networking opportunities"],
       "date": "2025-01-11T00:00:00.000Z"
+    },
+    {
+      "id": "3f60",
+      "satisfaction": "5",
+      "emojis": "4",
+      "reasons": ["Insufficient amenities"],
+      "date": "2025-01-23T09:30:50.218Z"
+    },
+    {
+      "id": "201b",
+      "satisfaction": "2",
+      "emojis": "5",
+      "reasons": ["Lack of quiet workspaces"],
+      "date": "2025-01-23T09:31:08.907Z"
     }
   ],
 
@@ -384,19 +398,21 @@
       "complaint": "Saturday",
       "date": "2025-01-11T00:00:00.000Z",
       "status": "unresolved"
+    },
+    {
+      "id": "eae2",
+      "email": "gabrielakoje@gmail.com",
+      "category": "service",
+      "service": "internet",
+      "complaint": "Final testing",
+      "date": "2025-01-23T09:31:36.625Z",
+      "status": "unresolved"
     }
   ],
 
   "profile": [
     {
-      "fullName": "Admin@TheBulb",
-      "email": "akoje@yahoo.com",
-      "phone": "+1-22-33-4445",
-      "location": "lagos",
-      "role": "Admin",
-      "membersince": "2025-01-15",
-      "lastlogin": "2024-07-10",
-      "image": "ttp://www.w3.org/2000/svg"
+      
     }
   ]
 }
