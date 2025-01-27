@@ -47,6 +47,7 @@ export const CapstoneContext = createContext();
 
 const CapstoneProvider = ({ children }) => {
   const [modalIsOpen, setModalIsOpen] = useState(false);
+  const [isAdmin, setIsAdmin] = useState("user"); 
 
   // Save FormData To The JSON Server
   // const saveFormData = async (type, data) => {
@@ -76,6 +77,8 @@ const CapstoneProvider = ({ children }) => {
     saveFormData,
     modalIsOpen,
     setModalIsOpen,
+    isAdmin,
+    setIsAdmin
   };
 
   return (
