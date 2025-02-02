@@ -38,15 +38,15 @@ export default App;
 //             path="/"
 //             element={
 //               <>
-//                 {/* <WelcomeSection /> */}
-//                 {/* <MainFeed /> */}
-//                 <MainForm />
+//                 <WelcomeSection />
+//                 <MainFeed />
+//                 {/* <MainForm /> */}
 //               </>
 //             }
 //           />
 //           <Route path="/complaint" element={<ComplaintForm />} />
 //           <Route path="/about" element={<FeedbackForm />} />
-//           <Route path="/dashboard" element={<AuthPage />} />
+//           {/* <Route path="/dashboard" element={<AuthPage />} /> */}
 //         </Routes>
 //       </div>
 //     </Router>
